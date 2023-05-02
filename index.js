@@ -1,9 +1,28 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  //Return true if given statement is a palindrome.Otherwise, return false
+  const splitWord = word.split('')
+  const reverseWord = splitWord.reverse()
+  const reverString = reverseWord.join('')
+
+  if(word === reverString){
+    return true 
+  }else{
+    return false
+  }
+  
 }
 
 /* 
   Add your pseudocode here
+  create a variable and then split into arrays
+  create another variable where arrays can be reverse it
+  function palindrome with one argument
+  if string is a plaindrome 
+  return true
+  else if not palindrome
+  return false
+  
 */
 
 /*
